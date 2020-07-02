@@ -1,0 +1,76 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots"
+        }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    supportLibVersion = '28.0.0'
+    daggerVersion = '2.21'
+    retrofitVersion = '2.1.0'
+    gsonConverterVersion = '2.1.0'
+    okhttpVersion = '3.8.0'
+    glideVersion = '4.8.0'
+    archVersion = '1.1.1'
+    rxjava2Version = '2.2.3'
+    rxandroidVersion = '2.1.0'
+    mockito = "2.7.19"
+    mockito_all = "1.10.19"
+    mockwebserver = "3.8.1"
+    hamcrest = "1.3"
+
+    supportLibAppCompat = 'androidx.appcompat:appcompat:1.1.0-alpha04'
+    supportLibDesign = 'com.google.android.material:material:1.0.0'
+    archRuntime = 'androidx.lifecycle:lifecycle-runtime:2.0.0'
+    archExtension = 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    archCompiler = 'androidx.lifecycle:lifecycle-compiler:2.0.0'
+    roomRuntime = 'androidx.room:room-runtime:2.0.0'
+    roomCompiler = 'androidx.room:room-compiler:2.0.0'
+    dagger = "com.google.dagger:dagger:$daggerVersion"
+    daggerCompiler = "com.google.dagger:dagger-compiler:$daggerVersion"
+    daggerAndroid = "com.google.dagger:dagger-android:$daggerVersion"
+    daggerAndroidSupport = "com.google.dagger:dagger-android-support:$daggerVersion"
+    daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:$daggerVersion"
+    retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    gsonConverter = "com.squareup.retrofit2:converter-gson:$gsonConverterVersion"
+    okhttp = "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    glide = "com.github.bumptech.glide:glide:$glideVersion"
+    glideCompiler = "com.github.bumptech.glide:compiler:$glideVersion"
+    card_view= 'androidx.cardview:cardview:1.0.0'
+    rx_android = "io.reactivex.rxjava2:rxandroid:2.1.0"
+    rx_java = "io.reactivex.rxjava2:rxjava:2.2.3"
+    material_search = "com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT"
+    okhttp_interceptor = "com.squareup.okhttp3:logging-interceptor:3.9.0"
+    retrofit_converter = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    rx_retrofit = "com.squareup.retrofit2:adapter-rxjava2:2.2.0"
+    arch_test= "android.arch.core:core-testing:$archVersion"
+    mockito_core = "org.mockito:mockito-core:$mockito"
+    mockito_all = "org.mockito:mockito-all:$mockito_all"
+    mock_web_server = "com.squareup.okhttp3:mockwebserver:$mockwebserver"
+    hamcrest = "org.hamcrest:hamcrest-all:$hamcrest"
+}

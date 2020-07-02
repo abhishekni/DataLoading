@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item android:title="Manage Orders">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/place_order"
+                android:icon="@drawable/ic_shopping_basket_black_24dp"
+                app:actionViewClass="android.widget.TextView"
+                android:title="Place Order" />
+            <item
+                android:id="@+id/tables"
+                android:icon="@drawable/ic_kitchen_black_24dp"
+                app:actionViewClass="android.widget.TextView"
+                android:title="Manage Reservation/tables" />
+            <item
+                android:id="@+id/history_returns"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:title="History/Returns" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="General">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/gift_cards"
+                android:icon="@drawable/ic_card_giftcard_black_24dp"
+                android:title="Gift Cards" />
+
+            <item
+                android:id="@+id/whats_new"
+                android:icon="@drawable/ic_whatshot_black_24dp"
+                app:actionViewClass="android.widget.TextView"
+                android:title="What's New" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Staff Management">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/shifts"
+                android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+                android:title="Start Shift" />
+            <!--<item
+                android:id="@+id/shift_reports"
+                android:icon="@drawable/ic_insert_drive_file_black_24dp"
+                android:title="Shift Report" />
+            <item
+                android:id="@+id/no_sale"
+                android:icon="@drawable/ic_thumb_down_black_24dp"
+                android:title="No Sale" />-->
+            <item
+                android:id="@+id/payouts"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="Pay In/Pay Out" />
+            </group>
+        </menu>
+    </item>
+    <!--<group android:checkableBehavior="single"
+        android:menuCategory="alternative">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>-->
+
+    <item android:title="System Setup">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/get_updates"
+                android:icon="@drawable/ic_system_update_alt_black_24dp"
+                android:title="Get Updates" />
+            <item
+                android:id="@+id/hardware_setup"
+                android:icon="@drawable/ic_settings_input_hdmi_black_24dp"
+                android:title="Hardware Setup" />
+            <item
+                android:id="@+id/language"
+                android:icon="@drawable/ic_translate_black_24dp"
+                android:title="Language Setup" />
+            <item
+                android:id="@+id/currency"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="Currency Setup" />
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Help?" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

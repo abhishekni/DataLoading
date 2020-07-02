@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/white"
+    android:radius="@dimen/dp_100"
+    tools:ignore="NewApi">
+
+    <item
+        android:id="@android:id/mask"
+        tools:targetApi="lollipop">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/corious_blue" />
+            <corners android:radius="@dimen/dp_100" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <gradient
+                android:centerColor="@color/corious_blue"
+                android:centerX="10%"
+                android:endColor="@color/cornflower_blue"
+                android:startColor="@color/corious_blue" />
+            <corners android:radius="@dimen/dp_100" />
+        </shape>
+    </item>
+</ripple>-->
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview_background_shape"
+        android:shape="rectangle">
+
+        <padding
+            android:bottom="2dp"
+            android:left="2dp"
+            android:right="2dp"
+            android:top="2dp" />
+        <corners android:radius="0dp" />
+
+    <solid android:color="@android:color/transparent"/>
+        <gradient
+            android:centerColor="@color/colorPrimary"
+            android:centerX="10%"
+            android:endColor="@color/colorPrimaryDark"
+            android:startColor="@color/colorPrimary" />
+
+    </shape>
+
+
